@@ -29,13 +29,13 @@
     <header class="mx-auto bg-white fixed top-0 left-0 right-0">
         <div class="container lg:max-w-[1140px] flex justify-between h-16 mx-auto ">
             <button title="Open menu" type="button" class="p-4 lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
             <ul class="items-stretch hidden space-x-3 lg:flex ">
                 <li class="flex">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1   dark:text-violet-400 dark:border-violet-400">PRODUCTS</a>
+                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1  ">PRODUCTS</a>
                 </li>
                 <li class="flex">
                     <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1  ">USER GUIDES</a>
@@ -51,10 +51,10 @@
                 </li>
             </ul>
             <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2 lg:order-first">
-                <img src="https://cdn.rode.com/website/images/logo/RODE_Logo_87x51_RGB.svg" alt="logo" class="w-24 h-16 dark:text-violet-400">
+                <img src="https://cdn.rode.com/website/images/logo/RODE_Logo_87x51_RGB.svg" alt="logo" class="w-24 h-16">
             </a>
             <div class="flex items-center md:space-x-4 w-6 lg:w-10 mr-4">
-                <svg class="w-8 h-8 dark:text-gray-100" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.4629 20.0231C15.6892 20.0231 19.9259 15.7646 19.9259 10.5115C19.9259 5.25846 15.6892 1 10.4629 1C5.2367 1 1 5.25846 1 10.5115C1 15.7646 5.2367 20.0231 10.4629 20.0231Z" stroke="#484848" stroke-width="2" stroke-miterlimit="10"></path> <path d="M17.6455 17.6025L26.0002 26.0001" stroke="#484848" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"></path></svg>
+                <svg class="w-8 h-8 " viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.4629 20.0231C15.6892 20.0231 19.9259 15.7646 19.9259 10.5115C19.9259 5.25846 15.6892 1 10.4629 1C5.2367 1 1 5.25846 1 10.5115C1 15.7646 5.2367 20.0231 10.4629 20.0231Z" stroke="#484848" stroke-width="2" stroke-miterlimit="10"></path> <path d="M17.6455 17.6025L26.0002 26.0001" stroke="#484848" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"></path></svg>
             </div>
         </div>
         </div>
@@ -278,17 +278,122 @@
         </div>
     </div>
     <hr>
-    <footer class="px-6 lg:py-16 divide-y dark:bg-gray-800 dark:text-gray-100  container lg:max-w-[1140px] mx-auto mt-8">
+    <footer class="px-6 lg:py-16 divide-y   container lg:max-w-[1140px] mx-auto mt-8">
         <div class="container flex flex-col justify-center lg:justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
             <div class="lg:w-1/6">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
-                    <!-- <div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
+                    <!-- <div class="flex items-center justify-center w-12 h-12 rounded-full ">
                         
                     </div> -->
                     <span class="self-center text-2xl font-medium"><img src="./images/RODE_logo_142x85_desktop_light_mode.svg" alt="" srcset=""></span>
                 </a>
             </div>
-            <div class="grid md:grid-cols-3 lg:grid-cols-3 content-center justify-center lg:justify-between text-l gap-x-3 gap-y-8 lg:w-3/6 ">
+
+            <!-- small screen collapsable footer list -->
+            <div class="lg:hidden">
+
+
+                <!-- Products -->
+                <div tabindex="0" class="collapse collapse-plus  bg-base-100  lg:hiddnen mb-2">
+                    <input type="checkbox" />
+                    <div class="checkbox collapse-title text-xl font-medium">
+                        <h3 class="tracking-wide   ">Products</h3>
+                    </div>
+                    <div class="collapse-content ">
+                        <ul class="space-y-3">
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Microphones</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Headphones</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Interfaces and Mixers</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Accessories</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Software</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Apparel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div tabindex="0" class="collapse collapse-plus border-none bg-base-100  lg:hiddnen  mb-2">
+                    <input type="checkbox" />
+                    <div class="checkbox collapse-title text-xl font-medium">
+                        <h3 class="tracking-wide ">Support</h3>
+                    </div>
+                    <div class="collapse-content">
+                        <ul class="space-y-3">
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Contact RØDE</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Service Centre</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Contact RØDE</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Service Centre</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Company -->
+                <div tabindex="0" class="collapse collapse-plus border-none bg-base-100  lg:hiddnen  mb-2">
+                    <input type="checkbox" />
+                    <div class="checkbox collapse-title text-xl font-medium">
+                        <h3 class="tracking-wide   ">Company</h3>
+                    </div>
+                    <div class="collapse-content">
+                        <ul class="space-y-3">
+                            <li>
+                                <a rel="noopener noreferrer" href="#">About RØDE</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">News and Info</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Job Opportunities</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Account -->
+                <div tabindex="0" class="collapse collapse-plus border-none bg-base-100  lg:hiddnen  mb-2">
+                    <input type="checkbox" />
+                    <div class="checkbox collapse-title text-xl font-medium">
+                        <h3 class="tracking-wide   ">Account</h3>
+                    </div>
+                    <div class="collapse-content">
+                        <ul class="space-y-3">
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Manage your Account</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Create Account
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- footer nav list  -->
+            <div class="hidden lg:grid  lg:grid-cols-3 content-center justify-center lg:justify-between text-l gap-x-3 gap-y-8 lg:w-3/6 ">
                 <div class="space-y-3">
                     <h3 class="tracking-wide   font-bold">Products</h3>
                     <ul class="space-y-3">
@@ -361,7 +466,7 @@
 
             </div>
             <div class="space-y-3 lg:w-2/6 flex flex-col   lg:content-right lg:text-right text-center">
-                <div class=" dark:text-gray-50 text-2xl font-bold content-center justify-center">Subscribe to our latest news and offers</div>
+                <div class="  text-2xl font-bold content-center justify-center">Subscribe to our latest news and offers</div>
                 <div class="flex justify-center lg:justify-end space-x-3">
                     <a class="hover:bg-white hover:text-[#AD9970] flex text-white  px-6 py-2 font-bold border-current border-[1px] rounded-full bg-[#AD9970] ">SIGN UP</a>
                 </div>
@@ -391,7 +496,6 @@
         </div>
 
     </footer>
-
 </body>
 
 </html>
